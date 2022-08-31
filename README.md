@@ -1,5 +1,5 @@
 # HashCuckoo: Predicting Elephant Flows using Meta-heuristics in Programmable Data Planes
-This repository contains the implementation and metadata of the HashCuckoo prototype presented in the paper submitted to [IEEE Global Communications Conference 2022 (GLOBECOM 2022)](https://globecom2022.ieee-globecom.org/).
+This repository contains the implementation and metadata of the HashCuckoo prototype presented in the paper submitted to IFIP Networking Conference 2022. We will include additional information after the [IFIP Networking Conference 2022](https://networking.ifip.org/2022/) review process.
 
 
 ___________________________
