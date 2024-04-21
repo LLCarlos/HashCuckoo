@@ -25,11 +25,11 @@ THRESHOLD_TIME  = 10        #10s
 THRESHOLD_SIZE  = 10000000  #10MB
 
 
-TOL_TIME = #Define tolerance
-TOL_SIZE = #Define tolerance
+TOL_TIME = 10#Define tolerance
+TOL_SIZE = 10000#Define tolerance
 
 
-cTIME = #Current time
+cTIME = 16 #Current time
 HOST_CONTROLLER = 'h9'  #Host controller communication
 
 #TCP FLAGS:
@@ -52,7 +52,7 @@ def handle_pkt(pkt, flow, pred, iface, ipController):
 
     if(pkt[0][Ether].type == 0x800):
         tos = pkt[0][IP].tos
-        if(pkt[0][IP].dst == ipController and (tos == 20 or tos == 32)):
+        if(pkt[0][IP].dst == ipController and (tos == 20 or tos == 32)):    
             
             if(pkt[0][IP].proto == 0x11):
                 if (Padding in pkt[0]):
@@ -127,7 +127,7 @@ def handle_pkt(pkt, flow, pred, iface, ipController):
                             print"...CRITICAL FLOW ALERT Successfully Processed!"
 
                             #LWR process
-                            flagPredictionEF = pred.inferData(tupla, TOL_TIME, TOL_SIZE, cTIME):
+                            flagPredictionEF = pred.inferData(tupla, TOL_TIME, TOL_SIZE, cTIME)
 
                         if flagPredictionEF:
                             flow.insertEF(tupla)
