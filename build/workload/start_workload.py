@@ -9,7 +9,7 @@ import os
 import numpy as np
 import signal
 
-M_PATH = '~/mininet/util/m'
+M_PATH = '../utils/mininet/util/m'
 
 
 list_thre = []
@@ -24,7 +24,7 @@ def nova_thread(line):
     timeS  = int(tupla[4])
 
     time.sleep(timeS)
-    print "Start Thread"
+    print ("Start Thread in Function")
     ###SERVER
     command = str('%s %s iperf3 -s -p%s -1'%(M_PATH, serv,porta))
     arg = command.split()
@@ -45,7 +45,7 @@ def nova_thread(line):
     pClient = subprocess.Popen(arg)
 
     out, error = pClient.communicate()
-    print out
+    print (out)
 
     #pClient.wait()
     #pClient.kill()
@@ -60,7 +60,7 @@ if __name__ == '__main__':
    
     try:
        
-        print'Start Threads'
+        print'Start Threads Inicial'
         pList = []
         arq3 = open("flows.txt", "r")
         dado = arq3.readlines()

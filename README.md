@@ -34,7 +34,7 @@ python control.py
 
 3. Start tshark sniffer:
 ```
-bash start_tshark.py
+bash start_tshark.sh
 ```
 
 4. Start workload:

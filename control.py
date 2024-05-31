@@ -26,10 +26,10 @@ THRESHOLD_SIZE  = 10000000  #10MB
 
 
 TOL_TIME = 10#Define tolerance
-TOL_SIZE = 10000#Define tolerance
+TOL_SIZE = 10#Define tolerance
 
 
-cTIME = 16 #Current time
+cTIME = 10 #Current time
 HOST_CONTROLLER = 'h9'  #Host controller communication
 
 #TCP FLAGS:
